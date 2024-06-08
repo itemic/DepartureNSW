@@ -11,7 +11,19 @@ import SwiftUI
 struct DepartureNSWApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            
+            TabView {
+                ContentView()
+                    .tabItem { Image(systemName: "0.circle")}
+                ContentView()
+                    .tabItem { Image(systemName: "1.circle")}
+                ContentView()
+                    .tabItem { Image(systemName: "22.circle")}
+            }
+            .tabViewStyle(PageTabViewStyle(indexDisplayMode: .always))
+            .indexViewStyle(PageIndexViewStyle(backgroundDisplayMode: .always))
+            .background(ignoresSafeAreaEdges: .top)
+            
         }
     }
 }

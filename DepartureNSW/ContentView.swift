@@ -36,6 +36,53 @@ struct ContentView: View {
                 Spacer()
             }
             .padding()
+            HStack(spacing: 0) {
+               
+                VStack {
+                    Text("8").textScale(.secondary).font(.system(size: 16)).bold()
+                    Image(systemName: "train.side.rear.car")
+                        .foregroundStyle(.green)
+                }
+                VStack {
+                    Text("7").textScale(.secondary).font(.system(size: 16)).bold()
+                    Image(systemName: "train.side.middle.car")
+                        .foregroundStyle(.orange)
+                }
+                VStack {
+                    Text("6").textScale(.secondary).font(.system(size: 16)).bold()
+                    Image(systemName: "train.side.middle.car")
+                                        .foregroundStyle(.green)
+                }
+                VStack {
+                    Text("5").textScale(.secondary).font(.system(size: 16)).bold()
+                    Image(systemName: "train.side.middle.car")
+                        .foregroundStyle(.red)
+                }
+                VStack {
+                    Text("4").textScale(.secondary).font(.system(size: 16)).bold()
+                    Image(systemName: "train.side.middle.car")
+                        .foregroundStyle(.red)
+                }
+                VStack {
+                    Text("3").textScale(.secondary).font(.system(size: 16)).bold()
+                    Image(systemName: "train.side.middle.car")
+                        .foregroundStyle(.red)
+                }
+                VStack {
+                    Text("2").textScale(.secondary).font(.system(size: 16)).bold()
+                    Image(systemName: "train.side.middle.car")
+                        .foregroundStyle(.orange)
+                }
+                VStack {
+                    Text("1").textScale(.secondary).font(.system(size: 16)).bold()
+                    Image(systemName: "train.side.front.car")
+                        .foregroundStyle(.green)
+                }
+                Spacer()
+            }
+            .font(.system(size: 24))
+            .padding(.bottom, 4)
+            .padding(.horizontal)
             
             Divider().padding(.horizontal)
             
@@ -104,7 +151,7 @@ struct ContentView: View {
                             
                         Spacer()
                     }
-                    .padding(.vertical, 17)
+                    .padding(.vertical, 16)
                     .background(.background)
                     
                 }
